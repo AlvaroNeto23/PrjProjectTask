@@ -1,0 +1,79 @@
+<div class="container mt-4">
+    <h2>Projects Management</h2>
+  
+    <!-- Formulário para criar ou editar um projeto -->
+    <form #projectForm="ngForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Project Name</label>
+        <input
+          type="text"
+          id="name"
+          class="form-control"
+          [(ngModel)]="project.name"
+          name="name"
+          required
+        />
+      </div>
+  
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea
+          id="description"
+          class="form-control"
+          [(ngModel)]="project.description"
+          name="description"
+        ></textarea>
+      </div>
+  
+      <button type="submit" class="btn btn-primary" [disabled]="projectForm.invalid">
+        {{ project.id ? 'Update Project' : 'Create Project' }}
+      </button>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        *ngIf="project.id"
+        (click)="resetForm()"
+      >
+        Cancel
+      </button>
+    </form>
+  
+    <hr />
+  
+    <!-- Lista de projetos -->
+    <div *ngIf="projects && projects.length > 0; else noProjects">
+      <table class="table table-bordered mt-3">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Created At</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let proj of projects">
+            <td>{{ proj.name }}</td>
+            <td>{{ proj.description }}</td>
+            <td>{{ proj.createdAt | date: 'short' }}</td>
+            <td>
+              <button class="btn btn-sm btn-info" (click)="editProject(proj)">
+                Edit
+              </button>
+              <button
+                class="btn btn-sm btn-danger"
+                (click)="deleteProject(proj.id)"
+              >
+                Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <!-- Mensagem caso não existam projetos -->
+    <ng-template #noProjects>
+      <p class="text-muted mt-3">No projects found. Create one to get started!</p>
+    </ng-template>
+  </div>

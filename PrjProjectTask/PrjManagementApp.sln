@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrjManagementApp.Domain", "PrjManagementApp.Domain\PrjManagementApp.Domain.csproj", "{BB1B9BB6-5D41-47C0-A089-9F3309BFE828}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrjManagementApp.Application", "PrjManagementApp.Application\PrjManagementApp.Application.csproj", "{A13A7461-7F7D-472F-90CA-51DEB1C69862}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrjManagementApp.Infrastructure", "PrjManagementApp.Infrastructure\PrjManagementApp.Infrastructure.csproj", "{9D89E9E7-8DBD-45DB-80AC-DAAE0EA8003E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrjManagementApp.API", "PrjManagementApp.API\PrjManagementApp.API.csproj", "{A54C24DA-219F-4DF9-81B9-CA9A6ABABBD4}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "PrjManagementApp.Angular", "PrjManagementApp.Angular\", "{EA78AB94-CACA-4BFD-BC30-1FF3ECAD1385}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_63458"
+		Debug.AspNetCompiler.PhysicalPath = "PrjManagementApp.Angular\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63458\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_63458"
+		Release.AspNetCompiler.PhysicalPath = "PrjManagementApp.Angular\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63458\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "63458"
+		SlnRelativePath = "PrjManagementApp.Angular\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB1B9BB6-5D41-47C0-A089-9F3309BFE828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB1B9BB6-5D41-47C0-A089-9F3309BFE828}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB1B9BB6-5D41-47C0-A089-9F3309BFE828}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB1B9BB6-5D41-47C0-A089-9F3309BFE828}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A13A7461-7F7D-472F-90CA-51DEB1C69862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A13A7461-7F7D-472F-90CA-51DEB1C69862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A13A7461-7F7D-472F-90CA-51DEB1C69862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A13A7461-7F7D-472F-90CA-51DEB1C69862}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D89E9E7-8DBD-45DB-80AC-DAAE0EA8003E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D89E9E7-8DBD-45DB-80AC-DAAE0EA8003E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D89E9E7-8DBD-45DB-80AC-DAAE0EA8003E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D89E9E7-8DBD-45DB-80AC-DAAE0EA8003E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A54C24DA-219F-4DF9-81B9-CA9A6ABABBD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A54C24DA-219F-4DF9-81B9-CA9A6ABABBD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A54C24DA-219F-4DF9-81B9-CA9A6ABABBD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A54C24DA-219F-4DF9-81B9-CA9A6ABABBD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA78AB94-CACA-4BFD-BC30-1FF3ECAD1385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA78AB94-CACA-4BFD-BC30-1FF3ECAD1385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA78AB94-CACA-4BFD-BC30-1FF3ECAD1385}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA78AB94-CACA-4BFD-BC30-1FF3ECAD1385}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {226EED40-B241-4F02-8025-89FE6A360C2B}
+	EndGlobalSection
+EndGlobal
